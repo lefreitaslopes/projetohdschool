@@ -1,0 +1,126 @@
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Sora', sans-serif;
+}
+
+   
+    
+ h1 {
+  background-color: black;
+  background-image: url("img/planetas.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+
+  color: #fff;
+  font-size: 48px;
+  font-weight: 300;
+  padding: 50px;
+  text-shadow: 4px 4px 4px #000;
+ 
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: 1fr 1fr */
+}
+
+
+/* Selecionamos os anchors dentro da nav para dar as características que desejos aos nosso links */
+nav > a {
+  border-bottom: 4px solid lightgray;
+  color: black;
+  font-size: 28px;
+  padding: 20px 10px;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s; /* permite transições mais suaves de estados */
+}
+
+/* Selecionamos novamente os anchors dentro do nav, mas agora apenas quando o evento de hover acontencer, alterando algumas propriedades do elemento nessa condição */
+nav > a:hover {
+  background-color: #660066;
+  border-bottom: 4px solid black;
+}
+
+img {
+	border-radius: 8px;
+	max-width: 100%;
+}
+
+iframe {
+	display: block;
+	width: 100%;
+	margin-bottom: 22px;
+	height: 315px;
+    }
+h2:hover {
+	background-color:#660066;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-gap: 22px;
+}
+
+.cartao {
+	background-color: #FFF0F5;
+	border: 2px solid #ccc;
+	border-radius: 8px;
+	padding: 22px;
+	align-self: flex-start;
+}
+
+a.botao {
+	display: inline-block;
+	background-color: #424242;
+	border-radius: 8px;
+	color: #fff;
+	padding: 14px 28px;
+	text-decoration: none;
+	transition: all 0.4s;
+}
+
+.botao:hover {
+	box-shadow: 2px 2px 4px #000;
+	background-color: #660066;
+	text-decoration: underline;
+}
+
+footer {
+	height: 120px;
+	border-radius: 8px;
+	margin-top: 22px;
+
+	background-color: #424242;
+	background-image: url("img/planetas.jpg");
+	background-position: center;
+	background-size: cover;
+}
+
+.filtro {
+	height: 100%;
+	background-color: rgba(0, 43, 0, 0.5);
+	border-radius: 8px;
+}
+
+.centro {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+small {
+	font-size: 28px;
+	color: #fff;
+}
